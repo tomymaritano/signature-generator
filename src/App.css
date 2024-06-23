@@ -1,13 +1,38 @@
+/* App.css */
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
   margin-top: 20px;
 }
 
-input {
+input, button {
   display: block;
   margin: 10px auto;
   padding: 8px;
   width: 200px;
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #444;
+  border: 1px solid #666;
 }
 
 .signature-preview {
@@ -16,6 +41,9 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .signature-image {
@@ -23,6 +51,7 @@ input {
   height: 100px;
   border-radius: 50%;
   margin-right: 20px;
+  border: 2px solid #555;
 }
 
 .signature-details {
@@ -37,4 +66,30 @@ input {
   color: #b38f00;
   display: block;
   margin-bottom: 5px;
+}
+
+.signature-container {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  width: 80%;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+code {
+  border: 1px solid black;
+  padding: 10px;
+  display: block;
+  background-color: #2e2e2e;
+  color: #dcdcdc;
+  margin: 0 auto;
+  width: 90%;
 }
